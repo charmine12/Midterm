@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Enrollment App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: rgb(38, 61, 29);">School Enrollment App</h1>
+      <div class="contact-form">
+        <label style="color: rgb(44, 4, 4);" for="name">First Name:</label>
+        <input type="fname" id="fname" placeholder="Enter fname" />
+        <br />
+        <label style="color: rgb(44, 4, 4);" for="name">Middle Name:</label>
+        <input type="mname" id="mname" placeholder="Enter mname" />
+        <br />
+        <label style="color: rgb(44, 4, 4);" for="mname">Last Name:</label>
+        <input type="lname" id="lname" placeholder="Enter lname" />
+        <br />
+        <label style="color: rgb(44, 4, 4);" for="age">Age:</label>
+        <input type="age" id="age" placeholder="age"/>
+        <br />
+        <label style="color: rgb(44, 4, 4);" for="gender">Gender:</label>
+        <input type="gender" id="gender" placeholder="gender" />
+        <br/>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br />
+        <label style="color: rgb(44, 4, 4);" for="course">Course:</label>
+        <input type="course" id="course" placeholder="course" />
+        <br />
+        <label type="year">School Year:</label>
+        <input for="year" id="year" name="year">
+        <br/>
+        
+        <button id="submit">Submit</button>
+      </div>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for students">
+      <div class="tablecontainer">
+      <table id="table">
+        <thead>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>  
+            <th>Age</th>   
+            <th>Gender</th>
+            <th>Birthday</th>
+            <th>Course</th>
+            <th>School Year</th>
+        </thead>
+        </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
